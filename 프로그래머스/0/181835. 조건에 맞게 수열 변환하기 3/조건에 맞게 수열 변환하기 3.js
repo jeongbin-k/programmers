@@ -1,8 +1,1 @@
-function solution(arr, k) {
-    let result = [];
-    
-    for(let i = 0; i < arr.length; i++) {
-        result.push( k % 2 !== 0 ? arr[i] * k : arr[i] + k);
-    }
-        return result;
-}
+const solution = (arr, k) => arr.map(v => k % 2 ? v * k : v + k);
