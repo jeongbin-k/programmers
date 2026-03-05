@@ -1,4 +1,1 @@
-function solution(num_list) {
-    const sort_num = num_list.sort((a,b) => a-b);
-    return sort_num.slice(5);
-}
+const solution = (num_list) => num_list.sort((a,b)=> a-b).slice(5);
