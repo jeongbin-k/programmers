@@ -1,0 +1,18 @@
+function solution(arr, flag) {
+    let X = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (flag[i]) {
+            const count = arr[i] * 2;
+            for (let j = 0; j < count; j++) {
+                X.push(arr[i]);
+            }
+        } else {
+            for (let j = 0; j < arr[i]; j++) {
+                X.pop();
+            }
+        }
+    }
+
+    return X;
+}
